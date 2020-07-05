@@ -1,0 +1,50 @@
+{
+    "name": "johnnguyen/server-monitor",
+    "description": "Monitor servers",
+    "keywords": [
+        "laravel-server-monitor"
+    ],
+    "homepage": "https://github.com/ngoctuanit07/server-monitor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Nguyen",
+            "email": "johnnguyencodedao@gmail.com",
+            "homepage": "https://johnnguyenn.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "^6.2",
+        "laravel/framework": "~5.8.0|^6.0|^7.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.8",
+        "orchestra/testbench": "^3.4.5",
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Johnnguyen\\ServerMonitor\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Johnnguyen\\ServerMonitor\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Johnnguyen\\ServerMonitor\\ServerMonitorServiceProvider"
+            ]
+        }
+    }
+}
